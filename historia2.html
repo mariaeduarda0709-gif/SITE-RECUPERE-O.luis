@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Histórias 2 - Relatos Sérios</title>
+
+ <style>
+ body{
+   margin:0;
+   font-family:Arial, sans-serif;
+   background:#ffffff;
+ }
+
+ header.cabecalho{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   padding:28px 25px;
+   background:linear-gradient(180deg, #0C5F52, #0A4B42);
+ }
+
+ .logo-area{
+   display:flex;
+   align-items:center;
+   gap:12px;
+ }
+
+ .logo-bolinha{
+   width:40px;
+   height:40px;
+   background:transparent;
+   border-radius:50%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   overflow:hidden;
+ }
+
+ .logo-bolinha svg{
+   width:40px;
+   height:40px;
+ }
+
+ .logo-texto{
+   color:#fff;
+   font-weight:bold;
+   font-size:18px;
+   line-height:18px;
+ }
+
+ .barra-pesquisa{
+   position:relative;
+   flex:1;
+   max-width:320px;
+   margin: 0 40px;
+ }
+
+ .barra-pesquisa input{
+   width:100%;
+   padding:10px 15px 10px 40px;
+   border-radius:25px;
+   border:none;
+   font-size:15px;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+ }
+
+ .icone-lupa{
+   position:absolute;
+   left:12px;
+   top:50%;
+   transform:translateY(-50%);
+   font-size:16px;
+   color:#444;
+ }
+
+ .icones-topo{
+   display:flex;
+   gap:60px;
+ }
+
+ .icone-bolinha{
+   width:38px;
+   height:38px;
+   background:#fff;
+   border-radius:50%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   overflow:hidden;
+   box-shadow:0 2px 5px rgba(0,0,0,0.2);
+ }
+
+ .icone-bolinha img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+   border-radius:50%;
+ }
+
+ nav.menu-topicos{
+   display:flex;
+   justify-content:center;
+   gap:35px;
+   margin-top:30px;
+ }
+
+ nav.menu-topicos button{
+   padding:8px 28px;
+   background:#0C5F52;
+   border:none;
+   border-radius:25px;
+   font-size:14px;
+   cursor:pointer;
+   transition:0.2s;
+   color:#000;
+ }
+
+ nav.menu-topicos button:hover{
+   background:#0fc7a0;
+ }
+
+ nav.menu-topicos .ativo{
+   background:#0C5F52;
+   color:#fff;
+ }
+
+ .caixa-funcionalidade{
+   background:linear-gradient(180deg, #0C5F52, #0A4B42);
+   width:80%;
+   margin:35px auto;
+   padding:35px 40px;
+   border-radius:35px;
+   text-align:center;
+   color:#fff;
+ }
+
+ .caixa-funcionalidade h2{
+   margin-top:0;
+   font-size:32px;
+   letter-spacing:1px;
+ }
+
+ .caixa-funcionalidade p{
+   font-size:18px;
+   line-height:1.6;
+   text-align:center;
+ }
+ </style>
+</head>
+
+<body>
+
+<header class="cabecalho">
+ <div class="logo-area">
+   <div class="logo-bolinha">
+     <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+       <circle cx="32" cy="32" r="31" fill="#0C5F52"/>
+       <circle cx="44.5" cy="21.5" r="5.5" fill="#EFEFEA"/>
+       <path d="M34 28 L42 34 L37 38 L29 32 Z" fill="#EFEFEA"/>
+       <path d="M20 40 L29 49 L33 45 L24 36 Z" fill="#EFEFEA"/>
+       <rect x="24" y="19" width="10" height="7" rx="1.2" fill="#EFEFEA" transform="rotate(-10 29 22.5)"/>
+       <path d="M20 12 C22 9, 30 9, 38 12 L38 14 C30 12, 24 13, 20 16 Z" fill="#EFEFEA" opacity="0.95"/>
+     </svg>
+   </div>
+   <span class="logo-texto">PEDIDO<br>DE AJUDA</span>
+ </div>
+
+ <div class="barra-pesquisa">
+   <span class="icone-lupa">🔍</span>
+   <input type="text" placeholder="Pesquisar...">
+ </div>
+
+ <div class="icones-topo">
+   <a href="#" class="icone-bolinha">
+       <img src="https://cdn-icons-png.flaticon.com/512/9421/9421022.png">
+   </a>
+   <a href="#" class="icone-bolinha">
+       <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+   </a>
+   <a href="#" class="icone-bolinha">
+       <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png">
+   </a>
+ </div>
+</header>
+
+<nav class="menu-topicos">
+ <button>galeria</button>
+ <button>histórias engraçada</button>
+ <button class="ativo">historia seria</button>
+ <button>funcionalidade</button>
+ <button>reflexão</button>
+ <button>crimes</button>
+</nav>
+
+<section class="caixa-funcionalidade">
+ <h2>RELATOS SÉRIOS</h2>
+ <p>Sergio Kato: Ator e ex-modelo que ganhou fama nos anos 1990 e chegou a trabalhar em Hollywood, mas acabou caindo na situação de rua após a vida de luxo se esvaír.</p>
+</section>
+
+<section class="caixa-funcionalidade">
+ <h2>RELATOS SÉRIOS</h2>
+ <p>Margot Kidder: Atriz que interpretou a Lois Lane em "Superman", sofreu um acidente em 1990 que a deixou parcialmente paralisada e endividada, passando por episódios de instabilidade mental e financeira.</p>
+</section>
+
+</body>
+</html>

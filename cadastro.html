@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Cadastro</title>
+
+ <style>
+ body{
+   margin:0;
+   font-family:Arial, sans-serif;
+   height:100vh;
+   background:linear-gradient(180deg, #0C5F52, #0A4B42);
+   display:flex;
+   justify-content:center;
+   align-items:center;
+ }
+
+ /* ---- CAIXA ---- */
+ .caixa-cadastro{
+   width:90%;
+   max-width:480px;
+   background:#ffffff;
+   padding:55px 40px;
+   border-radius:35px;
+   text-align:center; /* 🔥 Tudo centralizado dentro da caixa */
+   display:flex;
+   flex-direction:column;
+   align-items:center; /* 🔥 Centraliza inputs e botões */
+   box-shadow:0 5px 15px rgba(0,0,0,0.25);
+ }
+
+ .caixa-cadastro h2{
+   margin-top:0;
+   font-size:32px;
+   color:#0C5F52;
+   text-align:center; /* Garantia dupla */
+ }
+
+ /* ---- INPUTS ---- */
+ .caixa-cadastro input{
+   width:100%;
+   max-width:350px; /* 🔥 Para ficar centralizado e proporcional */
+   padding:14px 18px;
+   margin-top:20px;
+   border:2px solid #0C5F52;
+   border-radius:25px;
+   font-size:17px;
+   color:#0C5F52;
+   text-align:center; /* 🔥 Agora o texto dentro do input também fica centralizado */
+ }
+
+ .caixa-cadastro input::placeholder{
+   color:#0C5F52;
+   opacity:0.7;
+   text-align:center;
+ }
+
+ /* ---- BOTÃO ---- */
+ .botao-cadastrar{
+   width:100%;
+   max-width:350px;
+   margin-top:28px;
+   padding:14px 0;
+   border:none;
+   border-radius:25px;
+   background:#0C5F52;
+   font-size:19px;
+   color:white;
+   cursor:pointer;
+   transition:0.2s;
+   text-align:center;
+ }
+
+ .botao-cadastrar:hover{
+   background:#0fc7a0;
+ }
+
+ /* ---- LINK ---- */
+ .link-login{
+   margin-top:20px;
+   font-size:16px;
+   color:#0C5F52;
+   text-decoration:none;
+   font-weight:bold;
+   text-align:center;
+ }
+
+ .link-login:hover{
+   text-decoration:underline;
+ }
+ </style>
+
+</head>
+
+<body>
+
+<section class="caixa-cadastro">
+ <h2>Crie sua conta</h2>
+
+ <input type="email" placeholder="Seu e-mail">
+ <input type="password" placeholder="Sua senha">
+
+ <button class="botao-cadastrar">Cadastrar</button>
+
+ <a class="link-login">Já tem uma conta? Entrar</a>
+</section>
+
+</body>
+</html>

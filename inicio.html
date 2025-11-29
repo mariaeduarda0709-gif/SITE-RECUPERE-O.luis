@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Página Inicial</title>
+
+ <style>
+ body{
+   margin:0;
+   font-family:Arial, sans-serif;
+   background:#f5f5f5;
+ }
+
+
+
+ header.cabecalho{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   padding:28px 25px;
+   background:linear-gradient(180deg, #0C5F52, #0A4B42);
+ }
+
+ .logo-area{
+   display:flex;
+   align-items:center;
+   gap:12px;
+ }
+
+ .logo-bolinha{
+   width:40px;
+   height:40px;
+   background:transparent;
+   border-radius:50%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   overflow:hidden;
+ }
+
+ .logo-bolinha svg{
+   width:40px;
+   height:40px;
+ }
+
+ .logo-texto{
+   color:#fff;
+   font-weight:bold;
+   font-size:18px;
+   line-height:18px;
+ }
+
+ .barra-pesquisa{
+   position:relative;
+   flex:1;
+   max-width:320px;
+   margin: 0 40px;
+ }
+
+ .barra-pesquisa input{
+   width:100%;
+   padding:10px 15px 10px 40px;
+   border-radius:25px;
+   border:none;
+   font-size:15px;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+ }
+
+ .icone-lupa{
+   position:absolute;
+   left:12px;
+   top:50%;
+   transform:translateY(-50%);
+   font-size:16px;
+   color:#444;
+ }
+
+ .icones-topo{
+   display:flex;
+   gap:60px;
+ }
+
+ .icone-bolinha{
+   width:38px;
+   height:38px;
+   background:#fff;
+   border-radius:50%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   overflow:hidden;
+   box-shadow:0 2px 5px rgba(0,0,0,0.2);
+ }
+
+ .icone-bolinha img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+ }
+
+ 
+
+ nav.menu-topicos{
+   display:flex;
+   justify-content:center;
+   gap:35px;
+   margin-top:30px;
+ }
+
+ nav.menu-topicos button{
+   padding:8px 28px;
+   background:#fff;
+   border:none;
+   border-radius:25px;
+   font-size:14px;
+   cursor:pointer;
+   transition:0.2s;
+   color:#000;
+   box-shadow:0 1px 3px rgba(0,0,0,0.2);
+ }
+
+ nav.menu-topicos button:hover{
+   background:#0C5F52;
+   color:#fff;
+ }
+
+
+
+ .hero{
+   width:90%;
+   margin:35px auto;
+   background:linear-gradient(180deg, #0C5F52, #0A4B42);
+   padding:45px 35px;
+   border-radius:35px;
+   color:#fff;
+   text-align:center;
+   box-shadow:0 4px 12px rgba(0,0,0,0.2);
+ }
+
+ .hero h1{
+   font-size:40px;
+   margin:0;
+   font-weight:bold;
+ }
+
+ .hero p{
+   font-size:20px;
+   margin-top:15px;
+   line-height:1.6;
+ }
+
+ .cards{
+   width:90%;
+   margin:40px auto;
+   display:flex;
+   gap:25px;
+   justify-content:center;
+   flex-wrap:wrap;
+ }
+
+ .card{
+   background:#fff;
+   width:280px;
+   padding:25px;
+   border-radius:25px;
+   text-align:center;
+   box-shadow:0 3px 10px rgba(0,0,0,0.15);
+   transition:0.25s;
+ }
+
+ .card:hover{
+   transform:scale(1.04);
+ }
+
+ .card h3{
+   margin-top:0;
+   font-size:22px;
+   color:#0A4B42;
+ }
+
+ .card p{
+   font-size:14px;
+   color:#444;
+   line-height:1.5;
+ }
+
+ </style>
+</head>
+
+<body>
+
+<header class="cabecalho">
+ <div class="logo-area">
+   <div class="logo-bolinha">
+     <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+       <circle cx="32" cy="32" r="31" fill="#0C5F52"/>
+       <circle cx="44.5" cy="21.5" r="5.5" fill="#EFEFEA"/>
+       <path d="M34 28 L42 34 L37 38 L29 32 Z" fill="#EFEFEA"/>
+       <path d="M20 40 L29 49 L33 45 L24 36 Z" fill="#EFEFEA"/>
+       <rect x="24" y="19" width="10" height="7" rx="1.2" fill="#EFEFEA" transform="rotate(-10 29 22.5)"/>
+       <path d="M20 12 C22 9, 30 9, 38 12 L38 14 C30 12, 24 13, 20 16 Z" fill="#EFEFEA" opacity="0.95"/>
+     </svg>
+   </div>
+   <span class="logo-texto">PEDIDO<br>DE AJUDA</span>
+ </div>
+
+ <div class="barra-pesquisa">
+   <span class="icone-lupa">🔍</span>
+   <input type="text" placeholder="Pesquisar...">
+ </div>
+
+ <div class="icones-topo">
+   <a class="icone-bolinha">
+       <img src="https://cdn-icons-png.flaticon.com/512/9421/9421022.png">
+   </a>
+   <a class="icone-bolinha">
+       <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
+   </a>
+   <a class="icone-bolinha">
+       <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png">
+   </a>
+ </div>
+</header>
+
+<nav class="menu-topicos">
+ <button>galeria</button>
+ <button>histórias1</button>
+ <button>historia2</button>
+ <button>funcionalidade</button>
+ <button>reflexao</button>
+ <button>crimes</button>
+</nav>
+
+<section class="hero">
+ <h1>Bem-vindo ao Pedido de Ajuda</h1>
+ <p>Encontre histórias, reflexões, relatos, ajuda emocional, informações importantes e conteúdos que realmente fazem diferença na vida das pessoas.</p>
+</section>
+
+<div class="cards">
+ <div class="card">
+   <h3>Histórias Engraçadas</h3>
+   <p>Veja histórias que trazem leveza e humor para o seu dia.</p>
+ </div>
+
+ <div class="card">
+   <h3>Relatos Sérios</h3>
+   <p>Conteúdos profundos, reais e impactantes sobre a vida.</p>
+ </div>
+
+ <div class="card">
+   <h3>Ajuda & Reflexão</h3>
+   <p>Mensagens motivacionais, reflexivas e importantes.</p>
+ </div>
+
+ <div class="card">
+   <h3>Crimes & Notícias</h3>
+   <p>Casos reais e informações importantes sobre segurança.</p>
+ </div>
+</div>
+
+</body>
+</html>
